@@ -1,4 +1,8 @@
 {
+  "include": [
+    "./src/**/*",
+    "./node_modules/ignite-web-components/src/**/*"
+  ],
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
@@ -13,6 +17,9 @@
     "typeRoots": [
       "node_modules/@types"
     ],
+    "paths":{
+      "@ignite/*":["./node_modules/ignite-web-components/src/*"]
+    },
     "lib": [
       "es2018",
       "dom"
